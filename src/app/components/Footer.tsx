@@ -5,7 +5,9 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { sendEmail } from "./sendemail";
 import { useForm } from "react-hook-form";
-import { DevTool } from "@hookform/devtools";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+
 
 type FormValues = {
   email: string;
@@ -60,16 +62,16 @@ const Footer = () => {
                   Facebook
                 </Link>{" "}
               </li>
-              <li className="flex cursor-pointer rounded-lg bg-[#007bb6]  items-center h-12 w-32">
-                <a href="£">
+              <Link href="https://wa.me/22671341523" className="flex cursor-pointer rounded-lg bg-[#25D366]  items-center h-12 w-32">
+                <div>
                   <div className="bg-black linkicon relative flex items-center justify-center h-12 w-8">
-                    <Linkedin color="white" size={"18px"} />
+                    <FaWhatsapp color="white" size={"18px"} />
                   </div>
-                </a>
+                </div>
                 <h3 className="text-white text-sm w-full flex justify-center">
-                  Linkedin
+                  Whatsapp
                 </h3>{" "}
-              </li>
+              </Link>
             </ul>
           </div>
           <form onChange={() => {
@@ -123,9 +125,9 @@ const Footer = () => {
               </div>
               <div className="flex flex-col gap-1 mt-14">
                 <h3 className="text-sm text-white">{t("contactinfo")}</h3>
-                <h3 className="text-sm text-white">info@armana-pharma.com</h3>
-                <a href="tel:+201066506004" className="text-[#b0b0b0] text-xs my-1">+20 1066506004</a>
-                <a href="tel:+22671341523" className="text-[#b0b0b0] text-xs">+226 71 34 15 23</a>
+                <a href="mailto:info@armana-pharma.com" className="text-sm text-white flex gap-1 items-center"><CiMail size={'16px'} />info@armana-pharma.com</a>
+                <a href="tel:+201066506004" className="text-[#b0b0b0] text-xs my-1 flex gap-1 items-center"><FaPhoneAlt size={'14px'} />+20 1066506004</a>
+                <a href="https://wa.me/22671341523" className="text-[#b0b0b0] text-xs flex gap-1 items-center"><FaWhatsapp size={'16px'} />+226 71 34 15 23</a>
               </div>
             </div>
           </div>

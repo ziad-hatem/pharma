@@ -9,13 +9,13 @@ const page = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className="flex md:flex-row mt-10  flex-col md:m-10 w-full md:w-[90%] gap-10">
-        <div className="left px-5 w-full md:w-1/2">
+      <div className="flex md:flex-row mt-10  flex-col w-full md:w-[90%] gap-10 mx-auto">
+        <div className="left px-5 md:px-0 w-full ">
           <h1 className="text-3xl mb-5">{t("find_us_here")}</h1>
 
           <div className="contacts">
-            <ul className="flex flex-wrap gap-5 mt-10">
-              <li className="flex items-center justify-center gap-4 md:w-[45%]">
+            <ul className="flex flex-wrap justify-between gap-5 mt-10">
+              <li className="flex items-center justify-center gap-4">
                 <Image
                   src="/icon_1.svg"
                   width={50}
@@ -28,7 +28,7 @@ const page = () => {
                   <p className="text-lg md:text-xl">Egypt : +20 1066506004</p>
                 </div>
               </li>
-              <li className="flex items-center justify-center gap-4 md:w-[45%]">
+              <li className="flex items-center justify-center gap-4">
                 <Image
                   src="/whatsApp1.svg"
                   width={50}
@@ -47,7 +47,7 @@ const page = () => {
                   </p>
                 </div>
               </li>
-              <li className="flex items-center justify-center gap-4 md:w-[45%]">
+              <li className="flex items-center justify-center gap-4">
                 <Image
                   src="/icon_2.svg"
                   width={50}
@@ -61,7 +61,7 @@ const page = () => {
                   </a>
                 </div>
               </li>
-              <li className="flex items-center justify-center gap-4 md:w-[45%]">
+              <li className="flex items-center justify-center gap-4 md:w-[25%]">
                 <Image
                   src="/icon_3.svg"
                   width={50}

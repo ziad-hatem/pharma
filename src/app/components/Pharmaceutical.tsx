@@ -1,4 +1,5 @@
 "use client";
+import { Reveal } from "@/lib/Reveal";
 import React from "react";
 import { useTranslation } from "react-i18next";
 
@@ -9,11 +10,13 @@ const Pharmaceutical = () => {
       <h1 className="text-4xl text-center">{t("pharmaceutical")}</h1>
 
       <div className="mt-10 w-[90%] mx-auto">
+        <Reveal>
         <div className="flex w-full min-h-[300px] mt-10 mx-auto items-center flex-col md:flex-row">
           <div className="flex items-start gap-4">
             <div className="flex">
               <div
                 className="bg-black self-stretch"
+                
                 style={{ width: "6px" }}
               ></div>
               <p className="text-xl min-h-fit font-semibold ml-4">
@@ -28,6 +31,10 @@ const Pharmaceutical = () => {
             className="mr-10 max-w-[200px]"
           />
         </div>
+        </Reveal>
+        <Reveal>
+
+        
         <div className="flex w-full min-h-[300px] mt-10 mx-auto items-center flex-col md:flex-row">
           <img
             loading="lazy"
@@ -47,6 +54,7 @@ const Pharmaceutical = () => {
             </div>
           </div>
         </div>
+        </Reveal>
       </div>
     </div>
   );
