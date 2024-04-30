@@ -29,7 +29,7 @@ export const data = [
   },
   {
     id: "whiteningcream",
-    name: "Arma Whitening Cream",
+    name: "Arma Crème Clarifiante",
     desc: {
       en: "Formulated with a blend of natural brightening agents like Liquorice extract and Vitamin C, our Radiance Whitening Cream gently fades hyperpigmentation, dark spots, and uneven skin tone for a luminous, even complexion.",
       fr: "Formulée avec un mélange d'ingrédients éclaircissants naturels comme l'extrait de réglisse et la vitamine C, notre Crème Clarifiante atténue en douceur l'hyperpigmentation, les taches sombres et le teint irrégulier pour un teint lumineux et uniforme.",
@@ -43,10 +43,10 @@ export const data = [
   },
   {
     id: "facialcleanser",
-    name: "Arma Nettoyant pour le visageser",
+    name: "Arma Nettoyant pour le visage",
     desc: {
       en: "Awaken your senses and cleanse your skin with our Revitalizing Visage Wash. This invigorating facial wash, infused with Chamomile extract, Tea tree oil, Aloe vera extract, Panthenol, and Chlorhexidine, effectively removes impurities and makeup while leaving your skin feeling refreshed, revitalized, and ready for your skincare routine.",
-      fr: "Réveillez vos sens et nettoyez votre peau avec notre Nettoyant Visage revitalisant. Ce nettoyant facial vivifiant, infusé d'extrait de camomille, d'huile d'arbre à thé, d'extrait Aloe Vera, de panthénol et de chlorhexidine, élimine efficacement les impuretés et le maquillage tout en laissant votre peau rafraîchie, revitalisée et prête pour votre routine de soins.",
+      fr: "réveillez vos sens et nettoyez votre peau avec notre Nettoyant Visage revitalisant. Ce nettoyant facial vivifiant, infusé d'extrait de camomille, d'huile d'arbre à thé, d'extrait Aloe Vera, de panthénol et de chlorhexidine, élimine efficacement les impuretés et le maquillage tout en laissant votre peau rafraîchie, revitalisée et prête pour votre routine de soins.",
     },
     img: [
       "facialcleanser/1.png",

@@ -106,11 +106,11 @@ i18n.use(initReactI18next).init({
           "Fondée en Égypte en 2023, Armana Pharma fait parti des 17 années d'expertise régionale de ses fondateurs pour innover et répondre aux besoins de santé non en Égypte et en Afrique de l'Ouest. Avec une équipe de direction expérimentée, l'entreprise se concentre sur la qualité, la sécurité et l'accessibilité tout en élargissant ses opérations. Armana vise à favoriser les avancées dans le domaine de la santé en tant que catalyseur de changement positif, en s'assurant que ses produits de haute qualité atteignent ceux qui en ont besoin.",
         armana_industry_description:
           "Bienvenue dans l'industrie pharmaceutique égyptienne, un mélange de traditions médicinales historiques et d'innovation moderne qui façonne l'avenir des soins de santé. Depuis sa création en [insérer année de début], l'industrie s'est engagée à faire avancer les soins de santé grâce à une recherche pionnière et au respect de normes rigoureuses. Nos installations utilisent des technologies de pointe et des contrôles de qualité stricts pour produire des traitements conformes aux normes mondiales. Alors que nous continuons à innover, nous nous efforçons d'améliorer la santé mondiale et de redéfinir les soins de santé à chaque département.",
-        call_us_now: "Contactez-nous",
+        call_us_now: "Apaisante",
         about_our_company: "À propos de notre entreprise",
-        vision_heading: "Vision…",
+        vision_heading: "our Vision…",
         vision_description:
-          "Devenir la marque égyptienne de confiance pour la beauté et le bien-être, en permettant aux individus en Afrique de l'Ouest de dévoiler leur dévoiler révéler et de mener une vie plus saine et plus heureuse grâce à des produits Pharmaceutiques et des consommables de haute qualité dans tous les pays de l'Afrique de l'ouest d'issue de 2025.",
+          "Devenir la marque égyptienne de confiance pour la beauté et le bien-être, en permettant aux individus en Afrique de l'Ouest de révéler leur éclat naturel et de mener une vie plus saine et plus heureuse grâce à des produits Pharmaceutiques et des consommables de haute qualité dans tous les pays de l'Afrique de l'ouest d'issue de 2025.",
         mission_heading: "Mission…",
         mission_description:
           "Fournir des solutions pharmaceutiques et cosméceutiques abordables, accessibles et de haute qualité qui sont compétitives à l'échelle mondiale tout en célébrant l'héritage local, répondant aux besoins uniques de nos communautés.",
