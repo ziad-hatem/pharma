@@ -5,7 +5,7 @@ import TopofNavbar from "./components/TopofNavbar";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import '../i18n';
-
+import { motion } from "framer-motion"
 const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],

@@ -1,11 +1,12 @@
-'use client'
+"use client";
 import { useTranslation } from "react-i18next";
 import Footer from "../components/Footer";
 import Product from "../components/Product";
 import { data as products } from "@/data";
+import { Reveal } from "@/lib/Reveal";
 
 const page = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <div>
       {" "}
@@ -18,18 +19,23 @@ const page = () => {
           className="w-full h-[350px] object-cover"
         />
         <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
-          {t('our_products')}
+          {t("our_products")}
         </h1>
       </div>
       <div className="py-20">
-        <div className="header text-4xl text-center">{t('skin_care')}</div>
+        <div className="header text-4xl text-center">{t("skin_care")}</div>
         <div className="products md:w-[80%] mx-auto flex-wrap gap-10 mt-14 flex flex-col items-center md:flex-row justify-center">
-          {products.map(product => (
-            <Product imgSrc={product.img[0]} href={product.id} key={product.id} />
-          ))}
+            {products.map((product) => (
+            <Reveal>
+              <Product
+                imgSrc={product.img[0]}
+                href={product.id}
+                key={product.id}
+              />
+            </Reveal>
+            ))}
         </div>
       </div>
-
       <Footer />
     </div>
   );
