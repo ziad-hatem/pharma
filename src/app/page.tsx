@@ -1,0 +1,14 @@
+import Footer from "./components/Footer";
+import HomeSection from "./components/HomeSection";
+import Pharmaceutical from "./components/Pharmaceutical";
+export default function Home() {
+  return (
+    <div className="min-h-screen h-screen">
+      <section className="home h-full">
+        <HomeSection />
+      </section>
+      <Pharmaceutical />
+      <Footer />
+    </div>
+  );
+}

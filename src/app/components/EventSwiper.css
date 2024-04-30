@@ -1,0 +1,19 @@
+.effectSwiper {
+  width: 90% !important;
+  height: auto !important;
+}
+
+.effectSwiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.effectSwiper .swiper-slide img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.effectSwiper .swiper-button-next, .effectSwiper .swiper-button-prev {
+    display: none;
+}
