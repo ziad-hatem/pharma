@@ -85,7 +85,7 @@ export const data = [
   },
   {
     id: "whiteningsoap",
-    name: "Arma Anti-Acné",
+    name: "Arma Savon Clarifiant",
     desc: {
       en: "Reveal your skin’s true radiance with our Exfoliating Whitening Soap. This gentle yet effective bar gently buffs away dead skin cells, diminishes hyperpigmentation, and brightens your complexion, leaving it smooth, fresh, and visibly brighter",
       fr: "Révélez la véritable radiance de votre peau avec notre Savon Clarifiant exfoliant. Ce pain doux mais efficace gomme en douceur les cellules mortes de la peau, diminue l'hyperpigmentation et illumine votre teint, le laissant lisse, frais et visiblement plus clair.",
@@ -99,7 +99,7 @@ export const data = [
   },
   {
     id: "acnesoap",
-    name: "Arma Acne Soap",
+    name: "Arma Savon Anti-Acné",
     desc: {
       en: "Experience the purifying power of our Acne Soap. This invigorating bar, blended with Salicylic acid, tea tree oil, caffeine, benzyl peroxide, and Aloe Vera, draws out impurities, fights bacteria, and reduces excess oil, leaving your skin feeling refreshed and revitalized.",
       fr: "Expérimentez le pouvoir purifiant de notre Savon contre l'Acné. Ce pain est mélangé avec de l'acide salicylique, de l'huile d'arbre à thé, de la caféine, du peroxyde de benzoyle et de Aloe Vera', extrait les impuretés, combat les bactéries et réduit l'excès de sébum, laissant votre peau rafraîchie et revitalisée.",
