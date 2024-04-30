@@ -18,8 +18,8 @@ const page = ({ params }: { params: { name: string } }) => {
         </h1>
       </div>
 
-      <div className="product flex md:flex-row flex-col justify-between max-w-[90%] my-20 mx-auto min-h-[600px]">
-        <div className="left w-full md:w-[75%] md:p-10 my-5 bg-[#f7f7f7]">
+      <div className="product flex md:flex-row flex-col justify-between max-w-full my-20 mx-auto md:h-[600px] min-h-[600px]">
+        <div className="left w-full min-h-full p-3 md:w-[75%] my-5 md:p-10 md:my-0" style={{background: "linear-gradient(to right,#ffffff,#b2f0e6)"}}>
           <div>
             <div>
               <h1 className="text-2xl md:text-3xl my-4 font-semibold">
@@ -42,7 +42,7 @@ const page = ({ params }: { params: { name: string } }) => {
           </div>
         </div>
         <div
-          className="right flex flex-col justify-center items-center gap-5 min-h-[600px] w-full md:w-[25%]"
+          className="right flex flex-col justify-center items-center gap-5 min-h-full py-20 w-full md:w-[25%]"
           style={{
             background: "linear-gradient(45deg, #094978, #105e96)",
           }}

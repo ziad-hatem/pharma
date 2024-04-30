@@ -31,7 +31,7 @@ i18n.use(initReactI18next).init({
         armana_description:
           "Founded in Egypt in 2023, Armana Pharmaceuticals leverages its founders' 17 years of regional expertise to innovate and meet unmet healthcare needs in Egypt and West Africa. With a seasoned leadership team, the company focuses on quality, safety, and accessibility while expanding its operations. Armana aims to drive healthcare advancements as a catalyst for positive change, ensuring their high-quality products reach those in need.",
         armana_industry_description:
-          "Welcome to Egypt's pharmaceutical industry, a blend of historical medicinal traditions and modern innovation shaping healthcare's future. Since its inception in [insert start year], the industry has committed to advancing healthcare with pioneering research and adherence to rigorous standards. Our facilities utilize state-of-the-art technology and strict quality controls to produce treatments that meet global standards. As we continue to innovate, we strive to enhance global health and redefine healthcare with each breakthrough.",
+          "Welcome to Egypt's pharmaceutical industry, a blend of historical medicinal traditions and modern innovation shaping healthcare's future. Since its inception in 2023, the industry has committed to advancing healthcare with pioneering research and adherence to rigorous standards. Our facilities utilize state-of-the-art technology and strict quality controls to produce treatments that meet global standards. As we continue to innovate, we strive to enhance global health and redefine healthcare with each breakthrough.",
         call_us_now: "Call us now",
         about_our_company: "About our company",
         vision_heading: "Vision…",
