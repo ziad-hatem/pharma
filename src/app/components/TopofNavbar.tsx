@@ -10,7 +10,7 @@ const TopofNavbar = () => {
     <ul className=" flex gap-3 bg-[#084a79] w-full items-center justify-end pr-[8%] h-8">
       <li>
         <p className="text-white text-xs">
-         {t('call_us_now')} :
+         {t('call_us')} :
           <a href="tel:+201066506004"> +201066506004</a>
         </p>
       </li>
