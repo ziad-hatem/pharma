@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Figtree, Inter, Open_Sans, Poppins } from "next/font/google";
+import { Figtree, Inter, Open_Sans, Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import TopofNavbar from "./components/TopofNavbar";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
-import '../i18n';
-import { motion } from "framer-motion"
-const openSans = Open_Sans({
+import "../i18n";
+import { motion } from "framer-motion";
+const robot = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-primary",
 });
 
@@ -19,7 +19,6 @@ export const metadata = {
     template: "%s | Armana Pharma",
   },
   description: "Armana Pharma",
-
 };
 
 export default function RootLayout({
@@ -27,10 +26,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   return (
     <html lang="en">
-      <body className={`${openSans.variable}}`}>
+      <body className={`${robot.variable}}`}>
         <div className="navbar">
           <TopofNavbar />
           <Navbar />
