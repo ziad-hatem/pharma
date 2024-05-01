@@ -14,9 +14,9 @@ const page = () => {
         <div className="overlay w-full absolute left-0 top-0 h-full bg-opacity-60 bg-[#084a79]"></div>
         <img
           loading="lazy"
-          src="https://www.pivot-pharma.com/wp-content/uploads/2022/03/1391-2.jpg"
+          src="/ourproducts.png"
           alt=""
-          className="w-full h-[350px] object-cover"
+          className="w-full h-[400px] object-cover"
         />
         <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
           {t("our_products")}
@@ -25,7 +25,7 @@ const page = () => {
       <div className="py-20">
         <div className="header text-4xl text-center">{t("skin_care")}</div>
         <div className="products md:w-[80%] mx-auto flex-wrap gap-10 mt-14 flex flex-col items-center md:flex-row justify-center">
-            {products.map((product) => (
+          {products.map((product) => (
             <Reveal>
               <Product
                 imgSrc={product.img[0]}
@@ -33,7 +33,7 @@ const page = () => {
                 key={product.id}
               />
             </Reveal>
-            ))}
+          ))}
         </div>
       </div>
       <Footer />

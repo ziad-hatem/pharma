@@ -1,4 +1,3 @@
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -31,7 +30,8 @@
   background-color: transparent;
 }
 
-.swiper-button-prev, .swiper-button-next {
+.swiper-button-prev,
+.swiper-button-next {
   position: absolute !important;
   z-index: 5 !important;
 }
@@ -65,7 +65,7 @@
   text-decoration: none;
   mix-blend-mode: normal;
   width: 100%;
-  height: 60%;
+
   margin: 0px;
   z-index: auto;
   padding: 0px;

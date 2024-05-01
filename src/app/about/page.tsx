@@ -21,14 +21,12 @@ const page = () => {
   return (
     <div>
       <div className="header relative">
-        <div className="overlay w-full absolute left-0 top-0 h-full bg-opacity-60 bg-[#084a79]"></div>
-        <Image
-          width={400}
-          height={400}
-          src="https://www.pivot-pharma.com/wp-content/uploads/2022/03/about-us-banner.png"
+        <img
+          src="/ourvalues.png"
           alt=""
-          className="w-full h-[350px] object-cover"
+          className="w-full h-[400px] object-cover flex items-center"
         />
+        <div className="overlay w-full absolute left-0 top-0 h-[400px] bg-black"></div>
         <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
           {t("about_our_company")}
         </h1>
@@ -58,7 +56,7 @@ const page = () => {
           <h1 className="w-full text-center text-black text-3xl mb-8 md:text-5xl">
             Our Events
           </h1>
-           <EventSwiper />
+          <EventSwiper />
         </div>
         <div
           className="p-10 min-h-[45vh]"
@@ -68,7 +66,7 @@ const page = () => {
           }}
         >
           <h1 className="w-full text-center text-black text-3xl md:text-5xl">
-            {t('ourvalues')}
+            {t("ourvalues")}
           </h1>
           <div className="min-h-full min-w-full gap-20 flex flex-wrap justify-center md:flex-row md:justify-evenly mt-20">
             <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
@@ -132,7 +130,7 @@ const page = () => {
             </div>
           </div>
           <h1 className="w-full text-center text-black text-3xl md:text-5xl mt-10">
-            {t('burkinafasochallenges')}
+            {t("burkinafasochallenges")}
           </h1>
           <div className="min-h-full min-w-full gap-20 flex flex-wrap justify-center md:flex-row md:justify-evenly mt-20">
             <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">

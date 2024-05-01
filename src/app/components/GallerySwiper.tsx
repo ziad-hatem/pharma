@@ -38,8 +38,8 @@ export default function GallerySwiper({ images }: { images: string[] }) {
         {images.map((image, i) => (
           <SwiperSlide key={i}>
             <Image
-              width={500}
-              height={500}
+              width={600}
+              height={600}
               src={`/${image}`}
               alt=""
               className=" h-auto"
@@ -61,8 +61,8 @@ export default function GallerySwiper({ images }: { images: string[] }) {
         {images.map((image, i) => (
           <SwiperSlide key={i}>
             <Image
-              width={500}
-              height={500}
+              width={600}
+              height={600}
               src={`/${image}`}
               alt=""
               className="max-w-[230px] md:w-[250px] h-auto"
