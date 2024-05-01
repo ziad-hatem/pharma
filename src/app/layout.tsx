@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${robot.variable}}`}>
+      <body className={`${robot.variable} font-primary`}>
         <div className="navbar">
           <TopofNavbar />
           <Navbar />

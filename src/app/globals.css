@@ -1,7 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --font-primary: "Roboto", sans-serif;
+}
 
+.font-primary {
+  font-family: var(--font-primary);
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -77,10 +83,9 @@
 }
 
 .linkicon::after {
-  content: '';
+  content: "";
   position: absolute;
   border: 10px solid transparent;
   border-left-color: black;
   left: 100%;
 }
-
