@@ -12,18 +12,18 @@ const page = ({ params }: { params: { name: string } }) => {
 
   return (
     <div>
-      <div className="header h-[400px] relative">
+      <div className="header h-fit relative">
         <img
           src={`/${product[0].banner}`}
-          className="max-h-full w-full object-cover object-center"
+          className=" w-full h-fit object-cover object-center"
           alt=""
         />
-        <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%]  -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
-          {/* <p className="drop-shadow-md">{product[0].name}</p> */}
-        </h1>
+        {/* <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%]  -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
+          <p className="drop-shadow-md">{product[0].name}</p>
+        </h1> */}
       </div>
 
-      <div className="product flex md:flex-row flex-col justify-between max-w-full my-20 mx-auto md:h-[600px] min-h-[600px]">
+      <div className="product flex md:flex-row flex-col justify-between max-w-full my-5 mx-auto md:h-[600px] min-h-[600px]">
         <div
           className="left w-full min-h-full p-3 md:w-[75%] my-5 md:p-10 md:my-0"
           style={{
@@ -36,7 +36,7 @@ const page = ({ params }: { params: { name: string } }) => {
               <h1 className="text-2xl md:text-3xl my-4 font-semibold">
                 {product[0].name}
               </h1>
-              <div className="flex w-full min-h-[300px] mt-10 mx-auto items-center flex-col md:flex-row">
+              <div className="flex w-full min-h-fit py-5 mt-10 mx-auto items-center flex-col md:flex-row">
                 <div className="flex items-start gap-4">
                   <div className="flex">
                     <div
@@ -56,7 +56,7 @@ const page = ({ params }: { params: { name: string } }) => {
             </div>
           </div>
         </div>
-        <div className="right flex flex-col justify-center items-center gap-5 min-h-full py-20 w-full md:w-[25%]">
+        <div className="right flex flex-col justify-center items-center gap-5 min-h-full py-10 w-full md:w-[25%]">
           <div className="max-w-full flex gap-[2px] p-2">
             <GallerySwiper
               images={
