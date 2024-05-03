@@ -3,19 +3,19 @@ export const backgroundData = [
     img: "1.png",
     slogan: {
       en: "Beauty, Health and Beauté, Santé et",
+      en2: "Unleash Your Inner Glow.",
       fr: "Beauty, Health and Beauté, Santé et",
     },
-    slogan_width: "320px",
-    icon: true,
+    slogan_width: "100%",
   },
   {
     img: "2.png",
     slogan: {
-      en: "Beauty, Health and Beauté, Santé et",
+      en: "Arma cosmetic brand is more than cosmetics it`s a celebration of your unique beauty and a promise to unlock your inner glow.",
       fr: "Beauty, Health and Beauté, Santé et",
     },
-    slogan_width: "320px",
-    icon: true,
+    slogan_width: "40%",
+    styles: "ml-[-2%] mb-[8%] z-[999] relative",
   },
   {
     img: "3.png",
@@ -24,7 +24,7 @@ export const backgroundData = [
       fr: "ARMANA Votre porte d'entrée vers une beauté radieuse inspirée par l'esprit vibrant de l'Afrique! Nous sommes ravis de vous présenter notre collection de produits soigneusement sélectionnés, chacun formulé avec des ingrédients nourrissants et imprégné du riche patrimoine des traditions de l'Afrique de l'Est.",
     },
     slogan_width: "80%",
-    icon: false,
+    styles: "mb-10",
   },
 ];
 

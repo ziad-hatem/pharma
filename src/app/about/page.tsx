@@ -16,13 +16,14 @@ import {
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import EventSwiper from "../components/EventSwiper";
+import { Reveal } from "@/lib/Reveal";
 const page = () => {
   const { t } = useTranslation();
   return (
     <div>
       <div className="header relative">
         <img
-          src="/ourvalues.png"
+          src="/aboutus.png"
           alt=""
           className="w-full h-[400px] object-cover flex items-center"
         />
@@ -37,7 +38,7 @@ const page = () => {
             <div className="header text-center text-white mb-3 text-3xl">
               {t("vision_heading")}
             </div>
-            <p className="text-lg md:text-xl text-center text-white font-medium">
+            <p className="text-sm md:text-xl text-center text-white font-medium">
               {t("vision_description")}
             </p>
           </div>
@@ -45,7 +46,7 @@ const page = () => {
             <div className="header text-center text-white mb-3 text-3xl">
               {t("mission_heading")}
             </div>
-            <p className="text-lg md:text-xl text-center text-white font-medium">
+            <p className="text-sm md:text-xl text-center text-white font-medium">
               {t("mission_description")}
             </p>
           </div>
@@ -61,111 +62,130 @@ const page = () => {
         <div
           className="p-10 min-h-[45vh]"
           style={{
-            background:
-              'url("https://www.pivot-pharma.com/wp-content/uploads/2022/03/blue.jpg")',
+            background: 'url("/ourvalues.png")',
           }}
         >
           <h1 className="w-full text-center text-black text-3xl md:text-5xl">
             {t("ourvalues")}
           </h1>
           <div className="min-h-full min-w-full gap-20 flex flex-wrap justify-center md:flex-row md:justify-evenly mt-20">
-            <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
-              <div className="w-full absolute -top-5">
-                <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
-                  <Accessibility color="white" />
+            <Reveal>
+              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+                <div className="w-full absolute -top-5">
+                  <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
+                    <Accessibility color="white" />
+                  </div>
                 </div>
+                <p className="w-[150px]  text-[13px] h-auto text-center text-black p-1">
+                  <h1 className="text-lg my-4">{t("inclusivity_heading")}</h1>
+                  {t("inclusivity_description")}
+                </p>
               </div>
-              <p className="w-[150px]  text-[13px] h-auto text-center text-black p-1">
-                <h1 className="text-lg my-4">{t("inclusivity_heading")}</h1>
-                {t("inclusivity_description")}
-              </p>
-            </div>
-            <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
-              <div className="w-full absolute -top-5">
-                <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
-                  <Book color="white" />
+            </Reveal>
+            <Reveal>
+              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+                <div className="w-full absolute -top-5">
+                  <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
+                    <Book color="white" />
+                  </div>
                 </div>
+                <p className="w-[150px] text-[13px] text-center text-black p-1">
+                  <h1 className="text-lg my-4">{t("education_heading")}</h1>
+                  {t("education_description")}
+                </p>
               </div>
-              <p className="w-[150px] text-[13px] text-center text-black p-1">
-                <h1 className="text-lg my-4">{t("education_heading")}</h1>
-                {t("education_description")}
-              </p>
-            </div>
-            <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
-              <div className="w-full absolute -top-5">
-                <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
-                  <Recycle color="white" />
+            </Reveal>
+            <Reveal>
+              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+                <div className="w-full absolute -top-5">
+                  <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
+                    <Recycle color="white" />
+                  </div>
                 </div>
+                <p className="w-[150px] text-[13px] text-center text-black p-1">
+                  <h1 className="text-lg my-4">
+                    {t("sustainability_heading")}
+                  </h1>
+                  {t("sustainability_description")}
+                </p>
               </div>
-              <p className="w-[150px] text-[13px] text-center text-black p-1">
-                <h1 className="text-lg my-4">{t("sustainability_heading")}</h1>
-                {t("sustainability_description")}
-              </p>
-            </div>
-            <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
-              <div className="w-full absolute -top-5">
-                <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
-                  <Globe color="white" />
+            </Reveal>
+            <Reveal>
+              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+                <div className="w-full absolute -top-5">
+                  <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
+                    <Globe color="white" />
+                  </div>
                 </div>
+                <p className="w-[150px] text-[13px] text-center text-black p-1">
+                  <h1 className="text-lg my-4">
+                    {t("cultural_sensitivity_heading")}
+                  </h1>
+                  {t("cultural_sensitivity_description")}
+                </p>
               </div>
-              <p className="w-[150px] text-[13px] text-center text-black p-1">
-                <h1 className="text-lg my-4">
-                  {t("cultural_sensitivity_heading")}
-                </h1>
-                {t("cultural_sensitivity_description")}
-              </p>
-            </div>
-            <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
-              <div className="w-full absolute -top-5">
-                <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
-                  <TrendingUp color="white" />
+            </Reveal>
+            <Reveal>
+              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+                <div className="w-full absolute -top-5">
+                  <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
+                    <TrendingUp color="white" />
+                  </div>
                 </div>
+                <p className="w-[150px] text-[13px] text-center text-black p-1">
+                  <h1 className="text-lg my-4">
+                    {t("economic_empowerment_heading")}
+                  </h1>
+                  {t("economic_empowerment_description")}
+                </p>
               </div>
-              <p className="w-[150px] text-[13px] text-center text-black p-1">
-                <h1 className="text-lg my-4">
-                  {t("economic_empowerment_heading")}
-                </h1>
-                {t("economic_empowerment_description")}
-              </p>
-            </div>
+            </Reveal>
           </div>
           <h1 className="w-full text-center text-black text-3xl md:text-5xl mt-10">
             {t("burkinafasochallenges")}
           </h1>
           <div className="min-h-full min-w-full gap-20 flex flex-wrap justify-center md:flex-row md:justify-evenly mt-20">
-            <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
-              <div className="w-full absolute -top-5">
-                <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
-                  <Accessibility color="white" />
+            <Reveal>
+              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+                <div className="w-full absolute -top-5">
+                  <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
+                    <Accessibility color="white" />
+                  </div>
                 </div>
+                <p className="w-[150px]  text-[13px] h-auto text-center text-black p-1">
+                  <h1 className="text-lg my-4">{t("accessibility_heading")}</h1>
+                  {t("accessibility_description")}
+                </p>
               </div>
-              <p className="w-[150px]  text-[13px] h-auto text-center text-black p-1">
-                <h1 className="text-lg my-4">{t("accessibility_heading")}</h1>
-                {t("accessibility_description")}
-              </p>
-            </div>
-            <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
-              <div className="w-full absolute -top-5">
-                <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
-                  <Sun color="white" />
+            </Reveal>
+            <Reveal>
+              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+                <div className="w-full absolute -top-5">
+                  <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
+                    <Sun color="white" />
+                  </div>
                 </div>
+                <p className="w-[150px] text-[13px] text-center text-black p-1">
+                  <h1 className="text-lg my-4">
+                    {t("sun_protection_heading")}
+                  </h1>
+                  {t("sun_protection_description")}
+                </p>
               </div>
-              <p className="w-[150px] text-[13px] text-center text-black p-1">
-                <h1 className="text-lg my-4">{t("sun_protection_heading")}</h1>
-                {t("sun_protection_description")}
-              </p>
-            </div>
-            <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
-              <div className="w-full absolute -top-5">
-                <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
-                  <Sun color="white" />
+            </Reveal>
+            <Reveal>
+              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+                <div className="w-full absolute -top-5">
+                  <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
+                    <Sun color="white" />
+                  </div>
                 </div>
+                <p className="w-[150px] text-[13px] text-center text-black p-1">
+                  <h1 className="text-lg my-4">{t("skin_health_heading")}</h1>
+                  {t("skin_health_description")}
+                </p>
               </div>
-              <p className="w-[150px] text-[13px] text-center text-black p-1">
-                <h1 className="text-lg my-4">{t("skin_health_heading")}</h1>
-                {t("skin_health_description")}
-              </p>
-            </div>
+            </Reveal>
           </div>
         </div>
       </div>

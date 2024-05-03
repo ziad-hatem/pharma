@@ -28,7 +28,7 @@ const HomeSection = () => {
   };
 
   return (
-    <div className="min-h-fit w-full relative">
+    <div className="md:h-full w-full relative">
       <div className="autoplay-progress" key={progressKey}>
         <div
           className="progress-bar"
@@ -46,7 +46,7 @@ const HomeSection = () => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Pagination, Navigation]}
         className="HomeSwiper relative"
         onSlideChange={restartProgressBar} // Restart progress bar on slide change
       >
@@ -70,21 +70,12 @@ const HomeSection = () => {
               >
                 <div
                   style={{
-                    width: "22%",
+                    width: "180px",
                     height: "auto",
                     padding: "10px",
                   }}
                   className="mx-auto"
-                >
-                  {background.icon && (
-                    <img
-                      loading="lazy"
-                      src="/logo_icon.jpg"
-                      alt=""
-                      className="w-[140px] md:mt-[10%] mt-[25%] md:w-[100px] rounded-full mx-auto h-[50px]"
-                    />
-                  )}
-                </div>
+                ></div>
                 <div className="w-full flex justify-center mx-auto">
                   <Reveal>
                     <h1
@@ -92,8 +83,17 @@ const HomeSection = () => {
                         textShadow: "2px 2px 4px rgba(0, 0, 0, 1)",
                         width: background.slogan_width,
                       }}
-                      className={`text-center mx-auto block text-lg md:text-4xl top-full md:font-bold text-white max-w-[${background.slogan_width}]`}
+                      className={`text-center mx-auto block text-[8px] md:text-2xl ${
+                        background.styles ? background.styles : "top-full"
+                      } md:font-bold text-white max-w-[${
+                        background.slogan_width
+                      }]`}
                     >
+                      {background.slogan["en2"] && (
+                        <h1 className="text-center mx-auto block tracking-[5px] font-light mb-4 text-lg md:text-6xl">
+                          {background.slogan["en2"]}
+                        </h1>
+                      )}
                       {background.slogan["en"]}
                     </h1>
                   </Reveal>
