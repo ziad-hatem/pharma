@@ -35,7 +35,7 @@ const Pharmaceutical = () => {
           <div className="flex w-full min-h-[300px] mt-10 mx-auto items-center flex-col md:flex-row">
             <img
               loading="lazy"
-              src="/pepole.png"
+              src="/text2.png"
               alt=""
               className="mr-10 max-w-[200px]"
             />
