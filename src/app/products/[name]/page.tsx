@@ -12,20 +12,14 @@ const page = ({ params }: { params: { name: string } }) => {
 
   return (
     <div>
-      <div className="header h-[350px] relative">
-        <div
-          className="w-full h-full bg-opacity-60 bg-[#084a79]"
-          style={{
-            background: product[0].banner
-              ? `url(/${product[0].banner})`
-              : "rgba(8, 74, 121, 0.6)",
-            backgroundSize: "fill",
-            backgroundPosition: "top top",
-            backgroundRepeat: "no-repeat",
-          }}
-        ></div>
+      <div className="header h-[400px] relative">
+        <img
+          src={`/${product[0].banner}`}
+          className="max-h-full w-full object-cover object-center"
+          alt=""
+        />
         <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%]  -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
-          <p className="drop-shadow-md">{product[0].name}</p>
+          {/* <p className="drop-shadow-md">{product[0].name}</p> */}
         </h1>
       </div>
 
