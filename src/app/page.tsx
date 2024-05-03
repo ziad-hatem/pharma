@@ -7,7 +7,7 @@ import Pharmaceutical from "./components/Pharmaceutical";
 export default function Home() {
   return (
     <div className="min-h-screen h-screen">
-      <section className="home md:h-full">
+      <section className="home md:h-[100%] ">
         <HomeSection />
       </section>
       <Pharmaceutical />

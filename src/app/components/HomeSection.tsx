@@ -28,7 +28,7 @@ const HomeSection = () => {
   };
 
   return (
-    <div className="md:h-full w-full relative">
+    <div className="md:h-full  w-full relative">
       <div className="autoplay-progress" key={progressKey}>
         <div
           className="progress-bar"

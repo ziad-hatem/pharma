@@ -5,6 +5,7 @@ export const backgroundData = [
       en: "Beauty, Health and Beauté, Santé et",
       en2: "Unleash Your Inner Glow.",
       fr: "Beauty, Health and Beauté, Santé et",
+      fr2: "Unleash Your Inner Glow.",
     },
     slogan_width: "100%",
     styles: "md:text-2xl",
@@ -13,10 +14,10 @@ export const backgroundData = [
     img: "2.png",
     slogan: {
       en: "Arma cosmetic brand is more than cosmetics it`s a celebration of your unique beauty and a promise to unlock your inner glow.",
-      fr: "Beauty, Health and Beauté, Santé et",
+      fr: "Arma cosmetic brand is more than cosmetics it`s a celebration of your unique beauty and a promise to unlock your inner glow.",
     },
-    slogan_width: "40%",
-    styles: "ml-[-2%] mb-[8%] z-[999] relative md:text-2xl",
+    slogan_width: "35%",
+    styles: "ml-[8%] mb-[4%] z-[999] relative md:text-3xl",
   },
   {
     img: "3.png",
