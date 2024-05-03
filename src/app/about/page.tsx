@@ -63,6 +63,10 @@ const page = () => {
           className="p-10 min-h-[45vh]"
           style={{
             background: 'url("/ourvalues.png")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed",
           }}
         >
           <h1 className="w-full text-center text-black text-3xl md:text-5xl">
@@ -70,7 +74,7 @@ const page = () => {
           </h1>
           <div className="min-h-full min-w-full gap-20 flex flex-wrap justify-center md:flex-row md:justify-evenly mt-20">
             <Reveal>
-              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+              <div className="bg-white shadow-lg rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
                 <div className="w-full absolute -top-5">
                   <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
                     <Accessibility color="white" />
@@ -83,7 +87,7 @@ const page = () => {
               </div>
             </Reveal>
             <Reveal>
-              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+              <div className="bg-white shadow-lg rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
                 <div className="w-full absolute -top-5">
                   <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
                     <Book color="white" />
@@ -96,7 +100,7 @@ const page = () => {
               </div>
             </Reveal>
             <Reveal>
-              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+              <div className="bg-white shadow-lg rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
                 <div className="w-full absolute -top-5">
                   <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
                     <Recycle color="white" />
@@ -111,7 +115,7 @@ const page = () => {
               </div>
             </Reveal>
             <Reveal>
-              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+              <div className="bg-white shadow-lg rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
                 <div className="w-full absolute -top-5">
                   <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
                     <Globe color="white" />
@@ -126,7 +130,7 @@ const page = () => {
               </div>
             </Reveal>
             <Reveal>
-              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+              <div className="bg-white shadow-lg rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
                 <div className="w-full absolute -top-5">
                   <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
                     <TrendingUp color="white" />
@@ -146,7 +150,7 @@ const page = () => {
           </h1>
           <div className="min-h-full min-w-full gap-20 flex flex-wrap justify-center md:flex-row md:justify-evenly mt-20">
             <Reveal>
-              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+              <div className="bg-white shadow-lg rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
                 <div className="w-full absolute -top-5">
                   <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
                     <Accessibility color="white" />
@@ -159,7 +163,7 @@ const page = () => {
               </div>
             </Reveal>
             <Reveal>
-              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+              <div className="bg-white shadow-lg rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
                 <div className="w-full absolute -top-5">
                   <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
                     <Sun color="white" />
@@ -174,7 +178,7 @@ const page = () => {
               </div>
             </Reveal>
             <Reveal>
-              <div className="bg-white rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
+              <div className="bg-white shadow-lg rounded-md relative flex p-5 flex-col items-center h-fit min-w-[250px] max-w-[300px]">
                 <div className="w-full absolute -top-5">
                   <div className="bg-[#084a79] mx-auto flex justify-center items-center rounded-full w-11 h-11">
                     <Sun color="white" />

@@ -17,7 +17,7 @@ export const backgroundData = [
       fr: "Arma cosmetic brand is more than cosmetics it`s a celebration of your unique beauty and a promise to unlock your inner glow.",
     },
     slogan_width: "35%",
-    styles: "xl:ml-[8%] ml-[2%] mb-[4%] z-[999] relative md:text-3xl",
+    styles: "xl:ml-[2%] ml-[2%] mb-[4%] z-[999] relative md:text-3xl",
   },
   {
     img: "3.png",
