@@ -9,16 +9,28 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./HomeSwiperStyles/styles.css";
-
+import "aos/dist/aos.css";
+// import AOS from 'aos';
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-
+import { backgroundData } from "@/data";
+import AOS from "aos";
+import { Reveal } from "@/lib/Reveal";
 const HomeSection = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true, // animations only happen once - when the element first becomes visible
+      duration: 1200, // duration of the animations in milliseconds
+      easing: "ease-in-out", // easing function for the animations
+      delay: 100, // delay the animations by 100 milliseconds
+      disable: "mobile", // disable animations on mobile devices for performance
+    });
+  }, []);
 
-   const { t } = useTranslation();
-  const autoplayDelay = 2500; // Autoplay delay in milliseconds
+  const { t } = useTranslation();
+  const autoplayDelay = 4000; // Autoplay delay in milliseconds
   const [progressKey, setProgressKey] = useState(0); // Key to trigger re-render
 
   // Function to restart progress bar animation
@@ -27,32 +39,12 @@ const HomeSection = () => {
   };
 
   return (
-    <div className="h-full w-full relative">
+    <div className="min-h-fit w-full relative">
       <div className="autoplay-progress" key={progressKey}>
         <div
           className="progress-bar"
           style={{ animationDuration: `${autoplayDelay}ms` }}
         ></div>
-      </div>
-      <div className="absolute w-[60%] md:w-[80%] mx-auto overflow-hidden top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[2]">
-        <img
-          loading="lazy"
-          src="/logo_icon.jpg"
-          alt=""
-          className="w-[170px] md:mt-[10%] mt-[25%] md:w-[200px] rounded-full mx-auto h-auto"
-        />
-        <div className="flex text-center justify-center flex-col mx-auto h-auto w-full mt-5">
-          <div className="w-fit mx-auto">
-             <h1 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }} className="text-start w-fit block text-2xl md:text-4xl top-full font-bold text-white right-1/2">
-               {t('slogan1')}
-            </h1>
-          </div>
-          <div className="w-fit mx-auto">
-            <h1 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1)" }} className="text-start h-12 w-fit mt-1 text-2xl md:text-4xl font-bold text-white">
-                {t('slogan2')}
-            </h1>
-          </div>
-        </div>
       </div>
       <Swiper
         spaceBetween={30}
@@ -65,48 +57,65 @@ const HomeSection = () => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Pagination, Navigation]}
         className="HomeSwiper relative"
         onSlideChange={restartProgressBar} // Restart progress bar on slide change
       >
-        <SwiperSlide>
-          <div className="overlay absolute" />
-          <Image
-            width={700}
-            height={700}
-            loading="lazy"
-            src={
-              "/Pharma.jpg"
-            }
-            alt=""
-            className="scaling-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="overlay absolute" />
-          <Image
-            width={700}
-            height={700}
-            loading="lazy"
-            src={
-              "/Pharma-1.jpg"
-            }
-            alt=""
-            className="scaling-image"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="overlay absolute" />
-          <Image
-            width={700}
-            height={700}
-            loading="lazy"
-            src={"/Pharma-2-scaled.jpeg"}
-            alt=""
-            className="scaling-image"
-          />
-        </SwiperSlide>
-
+        {backgroundData.map((background, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <div className="overlay absolute" />
+              <img
+                loading="lazy"
+                src={`/${background.img}`}
+                alt=""
+                className="object-fit md:object-contain"
+              />
+              <div
+                style={{
+                  width: "80%",
+                  height: "auto",
+                  padding: "10px",
+                }}
+                className="absolute mx-auto overflow-hidden top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-[2]"
+              >
+                <div
+                  style={{
+                    width: "22%",
+                    height: "auto",
+                    padding: "10px",
+                  }}
+                  className="mx-auto"
+                >
+                  {background.icon && (
+                    <img
+                      loading="lazy"
+                      src="/logo_icon.jpg"
+                      alt=""
+                      className="w-[140px] md:mt-[10%] mt-[25%] md:w-[100px] rounded-full mx-auto h-[50px]"
+                    />
+                  )}
+                </div>
+                <div className="w-full flex justify-center mx-auto">
+                  <Reveal>
+                    <h1
+                      style={{
+                        textShadow: "2px 2px 4px rgba(0, 0, 0, 1)",
+                        width: background.slogan_width,
+                        "@media (max-width: 768px)": {
+                          width: "100px",
+                        },
+                      }}
+                      className={`text-center mx-auto block text-lg md:text-4xl top-full md:font-bold text-white max-w-[${background.slogan_width}]`}
+                    >
+                      {background.slogan["en"]}
+                    </h1>
+                  </Reveal>
+                </div>
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );

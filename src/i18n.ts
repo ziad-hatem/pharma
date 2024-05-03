@@ -25,8 +25,6 @@ i18n.use(initReactI18next).init({
         saturday_to_sunday: "Saturday-Sunday:",
         closed: "Closed",
         developed_by: "Developed By Abdallah Elzayat © All rights reserved.",
-        slogan1: "Beauty, Health and",
-        slogan2: "Hope together.",
         pharmaceutical: "Pharmaceutical",
         armana_description:
           "Founded in Egypt in 2023, Armana Pharmaceuticals leverages its founders' 17 years of regional expertise to innovate and meet unmet healthcare needs in Egypt and West Africa. With a seasoned leadership team, the company focuses on quality, safety, and accessibility while expanding its operations. Armana aims to drive healthcare advancements as a catalyst for positive change, ensuring their high-quality products reach those in need.",
@@ -100,8 +98,6 @@ i18n.use(initReactI18next).init({
         saturday_to_sunday: "Du samedi au dimanche :",
         closed: "Fermé",
         developed_by: "Développé par Abdallah Elzayat © Tous droits réservés.",
-        slogan1: "Beauté, Santé et",
-        slogan2: "Espoir Ensemble",
         pharmaceutical: "Pharmaceutique",
         armana_description:
           "Fondée en Égypte en 2023, Armana Pharma fait parti des 17 années d'expertise régionale de ses fondateurs pour innover et répondre aux besoins de santé non en Égypte et en Afrique de l'Ouest. Avec une équipe de direction expérimentée, l'entreprise se concentre sur la qualité, la sécurité et l'accessibilité tout en élargissant ses opérations. Armana vise à favoriser les avancées dans le domaine de la santé en tant que catalyseur de changement positif, en s'assurant que ses produits de haute qualité atteignent ceux qui en ont besoin.",

@@ -20,6 +20,15 @@
   object-fit: cover !important;
 }
 
+@media (max-width: 768px) {
+  .HomeSwiper {
+    height: fit-content !important;
+  }
+  .HomeSwiper .swiper-slide img {
+    object-fit: contain !important;
+  }
+}
+
 .autoplay-progress {
   width: 100%;
   height: 4px;

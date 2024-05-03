@@ -1,3 +1,33 @@
+export const backgroundData = [
+  {
+    img: "1.png",
+    slogan: {
+      en: "Beauty, Health and Beauté, Santé et",
+      fr: "Beauty, Health and Beauté, Santé et",
+    },
+    slogan_width: "320px",
+    icon: true,
+  },
+  {
+    img: "2.png",
+    slogan: {
+      en: "Beauty, Health and Beauté, Santé et",
+      fr: "Beauty, Health and Beauté, Santé et",
+    },
+    slogan_width: "320px",
+    icon: true,
+  },
+  {
+    img: "3.png",
+    slogan: {
+      en: "ARMANA Your gateway to radiant beauty inspired by the vibrant spirit of Africa! We are thrilled to introduce you to our carefully curated collection of Products, each formulated with nourishing ingredients and infused with the rich heritage of Eastern African traditions.",
+      fr: "ARMANA Votre porte d'entrée vers une beauté radieuse inspirée par l'esprit vibrant de l'Afrique! Nous sommes ravis de vous présenter notre collection de produits soigneusement sélectionnés, chacun formulé avec des ingrédients nourrissants et imprégné du riche patrimoine des traditions de l'Afrique de l'Est.",
+    },
+    slogan_width: "80%",
+    icon: false,
+  },
+];
+
 export const data = [
   {
     id: "acnicream",
@@ -104,10 +134,6 @@ export const data = [
       en: "Experience the purifying power of our Acne Soap. This invigorating bar, blended with Salicylic acid, tea tree oil, caffeine, benzyl peroxide, and Aloe Vera, draws out impurities, fights bacteria, and reduces excess oil, leaving your skin feeling refreshed and revitalized.",
       fr: "Expérimentez le pouvoir purifiant de notre Savon contre l'Acné. Ce pain est mélangé avec de l'acide salicylique, de l'huile d'arbre à thé, de la caféine, du peroxyde de benzoyle et de Aloe Vera', extrait les impuretés, combat les bactéries et réduit l'excès de sébum, laissant votre peau rafraîchie et revitalisée.",
     },
-    img: [
-      "acnesoap/1.png",
-      "acnesoap/2.png",
-      "acnesoap/3.png",
-    ],
+    img: ["acnesoap/1.png", "acnesoap/2.png", "acnesoap/3.png"],
   },
 ];
