@@ -45,6 +45,7 @@ export const data = [
       "acnicream/3.png",
       "acnicream/4.png",
     ],
+    banner: "acnicream/banner.png",
   },
   {
     id: "armabeautylotion",
@@ -76,6 +77,7 @@ export const data = [
       "whiteningcream/3.png",
       "whiteningcream/4.png",
     ],
+    banner: "whiteningcream/banner.png",
   },
   {
     id: "facialcleanser",
@@ -147,5 +149,6 @@ export const data = [
       fr: "Expérimentez le pouvoir purifiant de notre Savon contre l'Acné. Ce pain est mélangé avec de l'acide salicylique, de l'huile d'arbre à thé, de la caféine, du peroxyde de benzoyle et de Aloe Vera', extrait les impuretés, combat les bactéries et réduit l'excès de sébum, laissant votre peau rafraîchie et revitalisée.",
     },
     img: ["acnesoap/1.png", "acnesoap/2.png", "acnesoap/3.png"],
+    banner: "acnesoap/banner.png",
   },
 ];

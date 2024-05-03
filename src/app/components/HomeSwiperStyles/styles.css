@@ -10,11 +10,11 @@
 
 .HomeSwiper {
   width: 100%;
-  height: 90% !important;
+  height: 95% !important;
 }
 
 .HomeSwiper .swiper-slide {
-  height: 90%;
+  height: 95%;
   margin-top: 0;
 }
 

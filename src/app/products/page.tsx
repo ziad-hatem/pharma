@@ -16,7 +16,7 @@ const page = () => {
           loading="lazy"
           src="/ourproducts.png"
           alt=""
-          className="w-full h-[400px] object-cover"
+          className="w-full h-[140px] md:h-[400px] object-fill"
         />
         <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
           {t("our_products")}
