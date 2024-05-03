@@ -16,19 +16,8 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { backgroundData } from "@/data";
-import AOS from "aos";
 import { Reveal } from "@/lib/Reveal";
 const HomeSection = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true, // animations only happen once - when the element first becomes visible
-      duration: 1200, // duration of the animations in milliseconds
-      easing: "ease-in-out", // easing function for the animations
-      delay: 100, // delay the animations by 100 milliseconds
-      disable: "mobile", // disable animations on mobile devices for performance
-    });
-  }, []);
-
   const { t } = useTranslation();
   const autoplayDelay = 4000; // Autoplay delay in milliseconds
   const [progressKey, setProgressKey] = useState(0); // Key to trigger re-render
@@ -57,7 +46,7 @@ const HomeSection = () => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="HomeSwiper relative"
         onSlideChange={restartProgressBar} // Restart progress bar on slide change
       >
@@ -102,9 +91,6 @@ const HomeSection = () => {
                       style={{
                         textShadow: "2px 2px 4px rgba(0, 0, 0, 1)",
                         width: background.slogan_width,
-                        "@media (max-width: 768px)": {
-                          width: "100px",
-                        },
                       }}
                       className={`text-center mx-auto block text-lg md:text-4xl top-full md:font-bold text-white max-w-[${background.slogan_width}]`}
                     >
