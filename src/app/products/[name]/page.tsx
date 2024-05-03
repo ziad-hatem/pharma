@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Footer from "@/app/components/Footer";
 import GallerySwiper from "@/app/components/GallerySwiper";
 import { data } from "@/data";
@@ -7,19 +7,33 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
 const page = ({ params }: { params: { name: string } }) => {
-  const {i18n, t} = useTranslation()
+  const { i18n, t } = useTranslation();
   const product = data.filter((product) => product.id == params.name);
+
   return (
     <div>
       <div className="header h-[350px] relative">
-        <div className="w-full h-full bg-opacity-60 bg-[#084a79]"></div>
-        <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
-          {product[0].name}
+        <div
+          className="w-full h-full bg-opacity-60 bg-[#084a79]"
+          style={{
+            background: product[0].banner
+              ? `url(/${product[0].banner})`
+              : "rgba(8, 74, 121, 0.6)",
+          }}
+        ></div>
+        <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%]  -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
+          <p className="drop-shadow-md">{product[0].name}</p>
         </h1>
       </div>
 
       <div className="product flex md:flex-row flex-col justify-between max-w-full my-20 mx-auto md:h-[600px] min-h-[600px]">
-        <div className="left w-full min-h-full p-3 md:w-[75%] my-5 md:p-10 md:my-0" style={{background: "linear-gradient(to right,#ffffff,#b2f0e6)"}}>
+        <div
+          className="left w-full min-h-full p-3 md:w-[75%] my-5 md:p-10 md:my-0"
+          style={{
+            background:
+              product[0].color || "linear-gradient(to right,#ffffff,#b2f0e6)",
+          }}
+        >
           <div>
             <div>
               <h1 className="text-2xl md:text-3xl my-4 font-semibold">
@@ -33,7 +47,11 @@ const page = ({ params }: { params: { name: string } }) => {
                       style={{ width: "6px" }}
                     ></div>
                     <p className="text-lg md:text-xl md:w-[80%] min-h-fit font-semibold ml-4">
-                      {product[0].desc[`${i18n.language == 'English' ? 'en' : 'fr'}`]}
+                      {
+                        product[0].desc[
+                          `${i18n.language == "English" ? "en" : "fr"}`
+                        ]
+                      }
                     </p>
                   </div>
                 </div>
@@ -41,20 +59,26 @@ const page = ({ params }: { params: { name: string } }) => {
             </div>
           </div>
         </div>
-        <div
-          className="right flex flex-col justify-center items-center gap-5 min-h-full py-20 w-full md:w-[25%]"
-          style={{
-            background: "linear-gradient(45deg, #094978, #105e96)",
-          }}
-        >
-          <div className="max-w-full flex gap-[2px] p-2"><GallerySwiper images={Array.isArray(product[0].img) ? product[0].img : [product[0].img]} /></div>
+        <div className="right flex flex-col justify-center items-center gap-5 min-h-full py-20 w-full md:w-[25%]">
+          <div className="max-w-full flex gap-[2px] p-2">
+            <GallerySwiper
+              images={
+                Array.isArray(product[0].img)
+                  ? product[0].img
+                  : [product[0].img]
+              }
+            />
+          </div>
 
-          <Link href={'/contact'} className="bg-white p-4 px-8 rounded-full">
-            {t('call_us_now')}
+          <Link
+            href={"/contact"}
+            className="bg-black text-white p-4 px-8 rounded-full"
+          >
+            {t("call_us_now")}
           </Link>
         </div>
       </div>
-            
+
       <Footer />
     </div>
   );
