@@ -33,27 +33,26 @@ const page = ({ params }: { params: { name: string } }) => {
         )}
       </div>
 
-      <div className="product flex md:flex-row flex-col justify-between max-w-full my-5 mx-auto md:h-[600px] min-h-[600px]">
-        <div
-          className="left w-full min-h-full p-3 md:w-[75%] my-5 md:p-10 md:my-0"
-          style={{
+      <div className="product flex md:flex-row flex-col justify-between max-w-full mx-auto md:h-[600px] min-h-[600px]" style={{
             background:
               product[0].color || "linear-gradient(to right,#ffffff,#b2f0e6)",
-          }}
+          }}>
+        <div
+          className="left w-full min-h-full p-3 md:w-[75%] my-5 md:p-10 md:my-0"
         >
           <div>
             <div>
-              <h1 className="text-2xl md:text-3xl my-4 font-semibold">
+              <h1 className={`text-2xl md:text-3xl my-4 font-semibold ${product[0].styles ? `text-${product[0].styles}` : 'text-black'}`}>
                 {product[0].name}
               </h1>
               <div className="flex w-full min-h-fit py-5 mt-10 mx-auto items-center flex-col md:flex-row">
                 <div className="flex items-start gap-4">
                   <div className="flex">
                     <div
-                      className="bg-black self-stretch"
+                      className={` self-stretch ${product[0].styles ? `bg-${product[0].styles}` : 'bg-black'}`}
                       style={{ width: "6px" }}
                     ></div>
-                    <p className="text-lg md:text-xl md:w-[80%] min-h-fit font-semibold ml-4">
+                    <p className={`text-lg md:text-xl md:w-[80%] min-h-fit font-semibold ml-4 ${product[0].styles ? `text-${product[0].styles}` : 'text-black'}`}>
                       {
                         product[0].desc[
                           `${i18n.language == "English" ? "en" : "fr"}`

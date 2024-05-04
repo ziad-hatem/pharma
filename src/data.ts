@@ -108,6 +108,8 @@ export const data = [
       "armaexfoliatingbodyscrub/3.png",
       "armaexfoliatingbodyscrub/4.png",
     ],
+    banner: "armaexfoliatingbodyscrub/banner.png",
+    styles: 'white'
   },
   {
     id: "healingcream",

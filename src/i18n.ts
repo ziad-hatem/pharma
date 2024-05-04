@@ -76,7 +76,7 @@ i18n.use(initReactI18next).init({
 
         our_products: "Our Products",
         more_details: "More Details",
-        subscribe: "Subscribe",
+        subscribe: "Contact Us",
         email_address: "Email Address",
         find_us_here: "Find Us Here",
         subscribed: "Subscribed!",
