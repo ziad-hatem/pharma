@@ -12,16 +12,14 @@ const page = () => {
       {" "}
       <div className="header relative">
         <div className="overlay w-full absolute left-0 top-0 h-full bg-opacity-60 bg-[#084a79]"></div>
-        <div
-          className="w-full h-[450px]"
-          style={{
-            background: 'url("/ourproducts.png")',
-            backgroundSize: "contain",
-            backgroundPosition: "top center",
-            backgroundRepeat: "no-repeat",
-            backgroundAttachment: "fixed",
-          }}
-        ></div>
+        <div className="w-full h-[300px] xl:h-auto md:hidden">
+          <img
+            src="/ourproducts.png"
+            alt="Our Products"
+            className="h-full object-cover object-right"
+          />
+        </div>{" "}
+        <div className="w-full hidden md:block min-h-fit xl:h-[450px] our-products-background"></div>
         <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
           {t("our_products")}
         </h1>

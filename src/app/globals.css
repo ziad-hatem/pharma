@@ -56,7 +56,13 @@
 
     --radius: 0.5rem;
   }
-
+/* Add this to your CSS file */
+.our-products-background {
+  width: 100%;
+  min-height: fit-content;
+  height: 450px; /* for xl screens */
+  background: url("/ourproducts.png") center / 100% no-repeat fixed;
+}
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
