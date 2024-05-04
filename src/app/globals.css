@@ -60,8 +60,8 @@
 .our-products-background {
   width: 100%;
   min-height: fit-content;
-  height: 450px; /* for xl screens */
-  background: url("/ourproducts.png") center / 100% no-repeat fixed;
+  height: 100%; /* for xl screens */
+  background: url("/ourproducts.png") top / contain no-repeat fixed;
 }
   .dark {
     --background: 222.2 84% 4.9%;

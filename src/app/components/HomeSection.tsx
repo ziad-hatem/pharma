@@ -84,7 +84,7 @@ const HomeSection = () => {
                         textShadow: "2px 2px 4px rgba(0, 0, 0, 1)",
                         width: background.slogan_width,
                       }}
-                      className={`text-center mx-auto block text-[8px] ${
+                      className={`text-center mx-auto block text-[8px] md:text-[10px] ${
                         background.styles ? background.styles : "top-full"
                       } md:font-bold text-white max-w-[${
                         background.slogan_width

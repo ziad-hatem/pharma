@@ -18,7 +18,7 @@ i18n.use(initReactI18next).init({
         about: "About",
         products: "Products",
         contact: "Get in Touch",
-        newsletter: "Newsletter subscription",
+        newsletter: "Contact Us",
         contactinfo: "Contact info",
         business_hours: "Business Hours",
         monday_to_friday: "Monday-Friday:",
@@ -76,7 +76,7 @@ i18n.use(initReactI18next).init({
 
         our_products: "Our Products",
         more_details: "More Details",
-        subscribe: "Contact Us",
+        subscribe: "Subscribe",
         email_address: "Email Address",
         find_us_here: "Find Us Here",
         subscribed: "Subscribed!",

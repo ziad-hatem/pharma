@@ -39,12 +39,12 @@ const page = () => {
                   <p className="text-lg md:text-xl font-bold">
                     {t("whatsapp")}
                   </p>
-                  <p className="text-lg md:text-xl">
-                    {t("burkina_faso")} : +226 71 34 15 23
-                  </p>
-                  <p className="text-lg md:text-xl">
+                  <a href="https://wa.me/22671341523" className="text-lg block md:text-xl">
+                    {t("burkina_faso")} : +22 671341523
+                  </a>
+                  <a href="https://wa.me/201117873445" className="text-lg block md:text-xl">
                     {t("egypt")} : +20 1117873445
-                  </p>
+                  </a>
                 </div>
               </li>
               <li className="flex items-center justify-center gap-4">
