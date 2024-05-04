@@ -46,7 +46,8 @@ const HomeSection = () => {
           clickable: true,
         }}
         navigation={true}
-        modules={[Pagination, Navigation]}
+        loop={true}
+        modules={[Autoplay, Pagination, Navigation]}
         className="HomeSwiper relative"
         onSlideChange={restartProgressBar} // Restart progress bar on slide change
       >
