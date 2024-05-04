@@ -12,15 +12,25 @@ const page = ({ params }: { params: { name: string } }) => {
 
   return (
     <div>
-      <div className="header h-fit relative">
-        <img
-          src={`/${product[0].banner}`}
-          className=" w-full h-fit max-h-[350px] object-cover object-center"
-          alt=""
-        />
-        {/* <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%]  -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
-          <p className="drop-shadow-md">{product[0].name}</p>
-        </h1> */}
+      <div
+        className={` header  relative ${
+          product[0].banner ? "bg-black h-fit" : "bg-white h-[350px]"
+        }`}
+      >
+        {product[0].banner ? (
+          <img
+            src={`/${product[0].banner}`}
+            className=" w-full h-fit max-h-[500px] object-cover object-center"
+            alt=""
+          />
+        ) : (
+          <>
+            <div className="w-full h-full bg-opacity-60 bg-[#084a79]"></div>
+            <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%]  -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
+              <p className="drop-shadow-md">{product[0].name}</p>
+            </h1>
+          </>
+        )}
       </div>
 
       <div className="product flex md:flex-row flex-col justify-between max-w-full my-5 mx-auto md:h-[600px] min-h-[600px]">
