@@ -25,8 +25,8 @@ export const backgroundData = [
       en: "ARMANA Your gateway to radiant beauty inspired by the vibrant spirit of Africa! We are thrilled to introduce you to our carefully curated collection of Products, each formulated with nourishing ingredients and infused with the rich heritage of Eastern African traditions.",
       fr: "ARMANA Votre porte d'entrée vers une beauté radieuse inspirée par l'esprit vibrant de l'Afrique! Nous sommes ravis de vous présenter notre collection de produits soigneusement sélectionnés, chacun formulé avec des ingrédients nourrissants et imprégné du riche patrimoine des traditions de l'Afrique de l'Est.",
     },
-    slogan_width: "70%",
-    styles: "mb-10 md:mb-32 md:text-6xl",
+    slogan_width: "60%",
+    styles: "mb-10 md:mb-32 md:text-3xl xl:text-4xl",
   },
 ];
 
