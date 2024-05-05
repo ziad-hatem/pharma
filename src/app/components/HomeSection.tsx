@@ -11,11 +11,11 @@ import "swiper/css/pagination";
 import { backgroundData } from "@/data";
 import { Reveal } from "@/lib/Reveal";
 import { useTranslation } from "react-i18next";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "./HomeSwiperStyles/styles.css";
 const HomeSection = () => {
   const { t } = useTranslation();
-  const autoplayDelay = 4000; // Autoplay delay in milliseconds
+  const autoplayDelay = 2500; // Autoplay delay in milliseconds
   const [progressKey, setProgressKey] = useState(0); // Key to trigger re-render
 
   // Function to restart progress bar animation
@@ -43,7 +43,7 @@ const HomeSection = () => {
         }}
         navigation={true}
         loop={true}
-        modules={[Pagination, Navigation]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="HomeSwiper relative"
         onSlideChange={restartProgressBar} // Restart progress bar on slide change
       >

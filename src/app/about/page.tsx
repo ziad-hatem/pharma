@@ -25,8 +25,15 @@ const page = () => {
         <img
           src="/aboutus.png"
           alt=""
-          className="w-full h-[400px] object-cover flex items-center"
+          className="w-full  h-[400px] object-cover object-left flex items-center"
         />
+                <div  className="w-full h-[400px] hidden md:flex items-center"     style={{
+            background: 'url("/aboutus.png")',
+            backgroundSize: "contain",
+            backgroundPosition: "top",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed",
+          }}></div>
         <div className="overlay w-full absolute left-0 top-0 h-[400px] bg-black"></div>
         <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
           {t("about_our_company")}
