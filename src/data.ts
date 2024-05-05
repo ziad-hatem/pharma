@@ -2,13 +2,13 @@ export const backgroundData = [
   {
     img: "1.png",
     slogan: {
-      en: "Beauty, Health and Beauté, Santé et",
+      en: "Beauty, health and hope together",
       en2: "Unleash Your Inner Glow.",
       fr: "Beauty, Health and Beauté, Santé et",
       fr2: "Unleash Your Inner Glow.",
     },
     slogan_width: "100%",
-    styles: "md:text-2xl",
+    styles: "md:text-1xl",
   },
   {
     img: "2.png",
