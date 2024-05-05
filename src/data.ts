@@ -16,8 +16,9 @@ export const backgroundData = [
       en: "Arma cosmetic brand is more than cosmetics it`s a celebration of your unique beauty and a promise to unlock your inner glow.",
       fr: "Arma cosmetic brand is more than cosmetics it`s a celebration of your unique beauty and a promise to unlock your inner glow.",
     },
-    slogan_width: "35%",
-    styles: "xl:ml-[2%] ml-[2%] mb-[4%] z-[999] relative md:text-3xl",
+    slogan_width: "40%",
+    styles:
+      "xl:ml-[2%] ml-0 md:ml-[2%] mb-[4%] z-[999] relative md:text-[26px]",
   },
   {
     img: "3.png",
@@ -33,7 +34,10 @@ export const backgroundData = [
 export const data = [
   {
     id: "acnicream",
-    name: "Arma Crème Anti-Acné",
+    name: {
+      en: "Arma Acne Cream",
+      fr: "Arma Crème Anti-Acné",
+    },
     color: "linear-gradient(to right, #4BC0C8, #4BC0C8)",
     desc: {
       en: "Combat blemishes and prevent future breakouts with our Clarifying Acne Cream. This powerful yet gentle formula, infused with Sulfur and Salicylic Acid, bilberry extract, and panthenol effectively clears existing acne, reduces inflammation, and promotes clearer, healthier skin. Fight acne at its source while soothing your skin with natures best ingredients. Say goodbye to blemishes and hello to healthy, radiant skin.",
@@ -49,7 +53,10 @@ export const data = [
   },
   {
     id: "armabeautylotion",
-    name: "Arma Lotion De Beauté",
+    name: {
+      en: "Arma beauty lotion",
+      fr: "Arma Lotion De Beauté",
+    },
     color: "linear-gradient(to right, #F88379, #FFCC99)",
     desc: {
       en: "Indulge your skin in the luxurious care of our Nourishing Beauty Lotion. Enriched with Kojic acid, Jojoba oil, and Aloe Vera, this lightweight lotion deeply hydrates, softens, and protects your skin, making it irresistibly smooth and supple.",
@@ -65,7 +72,10 @@ export const data = [
   },
   {
     id: "whiteningcream",
-    name: "Arma Crème Clarifiante",
+    name: {
+      en: "Arma Whitening Cream",
+      fr: "Arma Crème Clarifiante",
+    },
     color: "linear-gradient(to right, #575757, #575757)",
     desc: {
       en: "Formulated with a blend of natural brightening agents like Liquorice extract and Vitamin C, our Radiance Whitening Cream gently fades hyperpigmentation, dark spots, and uneven skin tone for a luminous, even complexion.",
@@ -78,10 +88,14 @@ export const data = [
       "whiteningcream/4.png",
     ],
     banner: "whiteningcream/banner.png",
+    styles: 'white'
   },
   {
     id: "facialcleanser",
-    name: "Arma Nettoyant pour le visage",
+    name: {
+      en: "Arma Clean Facial Wash",
+      fr: "Arma Nettoyant pour le visage",
+    },
     desc: {
       en: "Awaken your senses and cleanse your skin with our Revitalizing Visage Wash. This invigorating facial wash, infused with Chamomile extract, Tea tree oil, Aloe vera extract, Panthenol, and Chlorhexidine, effectively removes impurities and makeup while leaving your skin feeling refreshed, revitalized, and ready for your skincare routine.",
       fr: "réveillez vos sens et nettoyez votre peau avec notre Nettoyant Visage revitalisant. Ce nettoyant facial vivifiant, infusé d'extrait de camomille, d'huile d'arbre à thé, d'extrait Aloe Vera, de panthénol et de chlorhexidine, élimine efficacement les impuretés et le maquillage tout en laissant votre peau rafraîchie, revitalisée et prête pour votre routine de soins.",
@@ -96,7 +110,10 @@ export const data = [
   },
   {
     id: "armagommagecorporel",
-    name: "Arma Gommage Corporel",
+    name: {
+      en: "Arma budy Scrub",
+      fr: "Arma Gommage Corporel",
+    },
     color: "linear-gradient(to right, #5c3633, #5c3633)",
     desc: {
       en: "Polish your skin to perfection with our Ex skin to perfection with our Exfoliating Body Scrub. This invigorating blend of Coffee Grounds and Shea Butter gently removes dead skin cells, improves circulation, and leaves your skin feeling silky smooth, radiant, and ready to glow.",
@@ -109,15 +126,18 @@ export const data = [
       "armaexfoliatingbodyscrub/4.png",
     ],
     banner: "armaexfoliatingbodyscrub/banner.png",
-    styles: 'white'
+    styles: "white",
   },
   {
     id: "healingcream",
-    name: "Arma Crème Cicatrisante",
+    name: {
+      en: "Arma Healing Cream",
+      fr: "Arma Crème Cicatrisante",
+    },
     color: "linear-gradient(to right, #e2deef, #f8f7fc)",
     desc: {
-      en: "Soothe and restore dry, irritated skin with our Soothing Healing Cream. This nourishing formula, rich in Honey and Calendula Oil, provides deep hydration, relieves inflammation, and promotes healing, leaving your skin feeling soft, comforted, and protected. Experience the difference nature can make. Try Arma Healing Cream today. Protect your skin from infection and promote faster healing with this multi-purpose cream.",
-      fr: "Apaisez et restaurez la peau sèche et irritée avec notre Crème Cicatrisante apaisante. Cette formule nourrissante, riche en miel et en huile de calendula, offre une hydratation profonde, soulage l'inflammation et favorise la guérison, laissant votre peau douce, réconfortée et protégée. Découvrez la différence que la nature peut faire. Utilisez Arma Crème Cicatrisante aujourd'hui et protégez votre peau des infections et favorisez une guérison plus rapide avec cette crème multi-usages.",
+      en: "When life throws its curveballs, your skin shouldn't suffer. Experience the soothing touch of Arma Healing, a nature-powered balm crafted to gently mend, protect, and revitalize your skin. Say goodbye to irritation, chafing, and minor wounds, and welcome a haven of comfort and renewal",
+      fr: "Lorsque la vie vous met à rude épreuve, votre peau ne devrait pas souffrir. Découvrir la touche apaisante d' ARMA Crème Anti-Cicatrices, un baume naturel conçu pour réparer, protéger et revitaliser votre peau en douceur. Dire adieu aux irritations, aux frottements et aux blessures mineures, et accueiller un havre de confort et de renouveau",
     },
     img: [
       "healingcream/1.png",
@@ -129,7 +149,10 @@ export const data = [
   },
   {
     id: "whiteningsoap",
-    name: "Arma Savon Clarifiant",
+    name: {
+      en: "Arma Whitening Soap",
+      fr: "Arma Savon Clarifiant",
+    },
     color: "linear-gradient(to right, #d5c27b, #d5c27b)",
     desc: {
       en: "Reveal your skin’s true radiance with our Exfoliating Whitening Soap. This gentle yet effective bar gently buffs away dead skin cells, diminishes hyperpigmentation, and brightens your complexion, leaving it smooth, fresh, and visibly brighter",
@@ -145,7 +168,10 @@ export const data = [
   },
   {
     id: "acnesoap",
-    name: "Arma Savon Anti-Acné",
+    name: {
+      en: "Arma Acne Soap",
+      fr: "Arma Savon Anti-Acné",
+    },
     desc: {
       en: "Experience the purifying power of our Acne Soap. This invigorating bar, blended with Salicylic acid, tea tree oil, caffeine, benzyl peroxide, and Aloe Vera, draws out impurities, fights bacteria, and reduces excess oil, leaving your skin feeling refreshed and revitalized.",
       fr: "Expérimentez le pouvoir purifiant de notre Savon contre l'Acné. Ce pain est mélangé avec de l'acide salicylique, de l'huile d'arbre à thé, de la caféine, du peroxyde de benzoyle et de Aloe Vera', extrait les impuretés, combat les bactéries et réduit l'excès de sébum, laissant votre peau rafraîchie et revitalisée.",

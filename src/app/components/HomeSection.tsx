@@ -1,22 +1,18 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-import "./HomeSwiperStyles/styles.css";
-import "aos/dist/aos.css";
-// import AOS from 'aos';
-// import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import Image from "next/image";
-import { useTranslation } from "react-i18next";
 import { backgroundData } from "@/data";
 import { Reveal } from "@/lib/Reveal";
+import { useTranslation } from "react-i18next";
+import { Navigation, Pagination } from "swiper/modules";
+import "./HomeSwiperStyles/styles.css";
 const HomeSection = () => {
   const { t } = useTranslation();
   const autoplayDelay = 4000; // Autoplay delay in milliseconds
@@ -47,7 +43,7 @@ const HomeSection = () => {
         }}
         navigation={true}
         loop={true}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Pagination, Navigation]}
         className="HomeSwiper relative"
         onSlideChange={restartProgressBar} // Restart progress bar on slide change
       >
@@ -84,14 +80,14 @@ const HomeSection = () => {
                         textShadow: "2px 2px 4px rgba(0, 0, 0, 1)",
                         width: background.slogan_width,
                       }}
-                      className={`text-center mx-auto block text-[8px] md:text-[10px] ${
+                      className={`text-center mx-auto block text-[8px] md:text-[24px] ${
                         background.styles ? background.styles : "top-full"
                       } md:font-bold text-white max-w-[${
                         background.slogan_width
                       }]`}
                     >
                       {background.slogan["en2"] && (
-                        <h1 className="text-center mx-auto block tracking-[5px] font-light mb-4 text-lg md:text-6xl">
+                        <h1 className="text-center mx-auto block tracking-[5px] font-light mb-2 md:mb-4 text-lg md:text-6xl">
                           {background.slogan["en2"]}
                         </h1>
                       )}

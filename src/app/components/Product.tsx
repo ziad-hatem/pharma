@@ -6,8 +6,9 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const Product = ({ imgSrc, href }: { imgSrc: string; href: string }) => {
-  const {t} = useTranslation()
+  const {t, i18n} = useTranslation()
    const product = data.filter((product) => product.id == href);
+    const currentLanguage = i18n.language === "English" ? "en" : "fr";
   return (
     <Link
       href={`products/${href}`}
@@ -25,7 +26,7 @@ const Product = ({ imgSrc, href }: { imgSrc: string; href: string }) => {
       <Link href={`products/${href}`} className="bg-[#307bc4] absolute text-white  top-[-18px] text-center w-1/2 p-1">{t('more_details')}</Link>
       <Link href={`products/${href}`} style={{
         borderRadius: '5px 5px 0 0'
-      }} className="bg-[#307bc4] absolute text-white bottom-0  text-center w-fit p-2">{product[0].name}</Link>
+      }} className="bg-[#307bc4] absolute text-white bottom-0  text-center w-fit p-2">{product[0].name[currentLanguage]}</Link>
 
     </Link>
   );

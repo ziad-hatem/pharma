@@ -9,7 +9,8 @@ import { useTranslation } from "react-i18next";
 const page = ({ params }: { params: { name: string } }) => {
   const { i18n, t } = useTranslation();
   const product = data.filter((product) => product.id == params.name);
-
+  const currentLanguage = i18n.language === "English" ? "en" : "fr";
+                      
   return (
     <div>
       <div
@@ -26,38 +27,53 @@ const page = ({ params }: { params: { name: string } }) => {
         ) : (
           <>
             <div className="w-full h-full bg-opacity-60 bg-[#084a79]"></div>
-            <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%]  -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
-              <p className="drop-shadow-md">{product[0].name}</p>
+            <h1 className="w-full absolute top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] text-center text-white text-3xl md:text-5xl">
+              <p className="drop-shadow-md">
+                {" "}
+                {product[0].name[currentLanguage]}
+              </p>
             </h1>
           </>
         )}
       </div>
 
-      <div className="product flex md:flex-row flex-col justify-between max-w-full mx-auto md:h-[600px] min-h-[600px]" style={{
-            background:
-              product[0].color || "linear-gradient(to right,#ffffff,#b2f0e6)",
-          }}>
-        <div
-          className="left w-full min-h-full p-3 md:w-[75%] my-5 md:p-10 md:my-0"
-        >
+      <div
+        className="product flex md:flex-row flex-col justify-between max-w-full mx-auto md:h-[600px] min-h-[600px]"
+        style={{
+          background:
+            product[0].color || "linear-gradient(to right,#ffffff,#b2f0e6)",
+        }}
+      >
+        <div className="left w-full min-h-full p-3 md:w-[75%] my-5 md:p-10 md:my-0">
           <div>
             <div>
-              <h1 className={`text-2xl md:text-3xl my-4 font-semibold ${product[0].styles ? `text-${product[0].styles}` : 'text-black'}`}>
-                {product[0].name}
+              <h1
+                className={`text-2xl md:text-3xl my-4 font-semibold ${
+                  product[0].styles ? `text-${product[0].styles}` : "text-black"
+                }`}
+              >
+                {product[0].name[currentLanguage]}
               </h1>
               <div className="flex w-full min-h-fit py-5 mt-10 mx-auto items-center flex-col md:flex-row">
                 <div className="flex items-start gap-4">
                   <div className="flex">
                     <div
-                      className={` self-stretch ${product[0].styles ? `bg-${product[0].styles}` : 'bg-black'}`}
+                      className={` self-stretch ${
+                        product[0].styles
+                          ? `bg-${product[0].styles}`
+                          : "bg-black"
+                      }`}
                       style={{ width: "6px" }}
                     ></div>
-                    <p className={`text-lg md:text-xl md:w-[80%] min-h-fit font-semibold ml-4 ${product[0].styles ? `text-${product[0].styles}` : 'text-black'}`}>
-                      {
-                        product[0].desc[
-                          `${i18n.language == "English" ? "en" : "fr"}`
-                        ]
-                      }
+                    <p
+                      className={`text-lg md:text-xl md:w-[80%] min-h-fit font-semibold ml-4 ${
+                        product[0].styles
+                          ? `text-${product[0].styles}`
+                          : "text-black"
+                      }`}
+                    >
+                      {product[0].desc[currentLanguage]}
+
                     </p>
                   </div>
                 </div>
